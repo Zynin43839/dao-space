@@ -1,5 +1,5 @@
 import { Rocket } from "lucide-react";
-import { FancyRouterLink } from "./FancyLink";
+import { FancyLink, FancyRouterLink } from "./FancyLink";
 
 export default function Header() {
   return (
@@ -32,9 +32,19 @@ export default function Header() {
             Contact
           </a>
         </div>
-        <FancyRouterLink to="/terminal" className="btn hidden md:inline-flex">
-          Warp into Terminal
-        </FancyRouterLink>
+        <div className="hidden md:flex items-center gap-2">
+          <FancyLink
+            href="/resume/Oranut-Suphatamat-Resume.pdf"
+            target="_blank"
+            rel="noreferrer"
+            className="btn-outline text-sm"
+          >
+            Resume
+          </FancyLink>
+          <FancyRouterLink to="/terminal" className="btn">
+            Warp into Terminal
+          </FancyRouterLink>
+        </div>
       </div>
     </nav>
   );

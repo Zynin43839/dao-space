@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail, MapPin, Star } from "lucide-react";
+import { FileDown, Github, Linkedin, Mail, MapPin, Star } from "lucide-react";
 import Header from "../components/Header";
 import Section from "../components/Section";
 import Starfield from "../components/Starfield";
-import { FancyLink } from "../components/FancyLink";
+import { FancyLink, FancyRouterLink } from "../components/FancyLink";
 
 import {
   profile,
@@ -55,6 +55,14 @@ const Hero = () => (
               >
                 <Linkedin size={16} /> LinkedIn
               </FancyLink>
+              <FancyLink
+                className="btn"
+                href="/resume/Oranut-Suphatamat-Resume.pdf"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FileDown size={16} /> Resume
+              </FancyLink>
             </div>
 
             <div className="flex items-center gap-2 text-white/70">
@@ -80,7 +88,7 @@ const Hero = () => (
 
             <img
               src={profile.photo || "/dao.jpg"}
-              alt="Oranut Sphatamat"
+              alt="Oranut Suphatamat"
               className="relative z-[1] w-full h-full object-cover rounded-full border border-white/20 shadow-[0_10px_40px_rgba(0,0,0,.45)]"
               loading="eager"
             />
@@ -229,23 +237,32 @@ const Projects = () => (
               <li key={k}>{h}</li>
             ))}
           </ul>
-          <div className="mt-4 flex gap-3">
-            <FancyLink
-              className="btn"
-              href={p.links.demo}
-              target="_blank"
-              rel="noreferrer"
-            >
-              Demo
-            </FancyLink>
-            <FancyLink
-              className="btn-outline"
-              href={p.links.repo}
-              target="_blank"
-              rel="noreferrer"
-            >
-              Repo
-            </FancyLink>
+          <div className="mt-4 flex flex-wrap gap-3">
+            {p.links.demo && (
+              <FancyLink
+                className="btn"
+                href={p.links.demo}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Demo
+              </FancyLink>
+            )}
+            {p.links.caseStudy && (
+              <FancyRouterLink className="btn-outline" to={p.links.caseStudy}>
+                Case Study
+              </FancyRouterLink>
+            )}
+            {p.links.repo && (
+              <FancyLink
+                className="btn-outline"
+                href={p.links.repo}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Repo
+              </FancyLink>
+            )}
           </div>
         </motion.article>
       ))}

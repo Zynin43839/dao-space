@@ -8,8 +8,14 @@ body,
 #root {
   height: 100%;
 }
+/* Larger base so body copy reads comfortably on a laptop (was 16px). */
+html {
+  font-size: 18px;
+}
 body {
-  @apply bg-spacebg text-white font-sans;
+  @apply bg-spacebg text-white;
+  font-family: "Inter", "Noto Sans Thai", ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* Container & UI tokens */
