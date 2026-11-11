@@ -150,7 +150,7 @@ export default function CaseStudy() {
             </FancyLink>
             <FancyLink
               className="btn text-sm"
-              href="https://github.com/Zynin43839/rag-diary-front-end"
+              href="https://github.com/Zynin43839/rag-diary"
               target="_blank"
               rel="noreferrer"
             >
@@ -451,7 +451,7 @@ export default function CaseStudy() {
           </FancyRouterLink>
           <FancyLink
             className="btn"
-            href="https://github.com/Zynin43839/rag-diary-front-end"
+            href="https://github.com/Zynin43839/rag-diary"
             target="_blank"
             rel="noreferrer"
           >

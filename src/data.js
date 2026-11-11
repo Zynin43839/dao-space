@@ -93,7 +93,7 @@ export const projects = [
       "Thai-first UI with English localisation, a 30-second project clip, and a 22-slide deck in both languages",
     ],
     links: {
-      repo: "https://github.com/Zynin43839/rag-diary-front-end",
+      repo: "https://github.com/Zynin43839/rag-diary",
       caseStudy: "/case-study/rag-diary",
     },
   },
