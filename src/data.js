@@ -128,7 +128,7 @@ export const education = [
     degree: "Master of Science (M.Sc.) in Biotechnology",
     school: "Khon Kaen University, Thailand",
     extras: [
-      "GPA: 2.94",
+      "GPA: 3.11",
       "Graduated: July 2022",
       "Faculty: Biotechnology",
       "Thesis: Biochemical Methane Potential of Sugarcane Leaves and the Specific Methanogenic Activity of Unacclimatized and Acclimatized Anaerobic Mixed Cultures in Cow Dung and Rumen Fluid ",
@@ -138,7 +138,7 @@ export const education = [
     degree: "Bachelor of Science (B.Sc.) in Biotechnology",
     school: "Khon Kaen University, Thailand",
     extras: [
-      "GPA: 3.11",
+      "GPA: 2.94",
       "Graduated: June 2020",
       "Faculty: Biotechnology",
       "Project: Compared of ELISA technique and selective medium technique for detecting bacterial fruit bloth caused by Acidovorax citrulli. ",
