@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import {
   ArrowLeft,
   ArrowUpRight,
-  CheckCircle2,
   Code2,
   Database,
   Layers,
@@ -17,7 +16,6 @@ const IMG = `${BASE}/img`;
 
 const LIVE_APP = "https://rag-diary-app.vercel.app";
 const REPO = "https://github.com/Zynin43839/rag-diary";
-const ANALYSIS_SITE = "https://oranut-ba-portfolio.vercel.app";
 
 const metrics = [
   { value: "15", label: "API endpoints" },
@@ -159,9 +157,6 @@ export default function CaseStudy() {
           <FancyLink className="btn-outline" href={REPO} target="_blank" rel="noreferrer">
             Read the code
           </FancyLink>
-          <FancyLink className="btn-outline" href={ANALYSIS_SITE} target="_blank" rel="noreferrer">
-            The analysis behind it
-          </FancyLink>
         </div>
         <dl className="mt-8 grid gap-4 sm:grid-cols-3">
           <div className="card !p-4">
@@ -288,24 +283,6 @@ export default function CaseStudy() {
             <li>No acceptance testing with real users has taken place; the flows were verified by the author.</li>
             <li>The project is a solo build, so the timeline reflects practice rather than a team schedule.</li>
           </ul>
-        </div>
-        <div className="mt-6 card">
-          <div className="flex items-start gap-3">
-            <CheckCircle2 size={18} className="mt-0.5 shrink-0 text-emerald-400" />
-            <p className="text-sm text-white/75">
-              The analysis side of this project — requirements, traceability, risk, test plan and 25
-              documents in Thai and English — lives on the{" "}
-              <a
-                className="underline underline-offset-2"
-                href={ANALYSIS_SITE}
-                target="_blank"
-                rel="noreferrer"
-              >
-                BA/SA portfolio
-              </a>
-              . This page stays on the code.
-            </p>
-          </div>
         </div>
         <div className="mt-6 flex flex-wrap gap-3">
           <FancyRouterLink to="/#projects" className="btn-outline">
