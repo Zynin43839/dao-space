@@ -74,10 +74,10 @@ export const projects = [
     },
   },
   {
-    name: "RAG-Diary — AI Diary with Semantic Search (BA/SA + Full-stack)",
+    name: "RAG-Diary — AI Diary with Semantic Search (Full-stack)",
     period: "Oct 2026",
     description:
-      "A privacy-first diary app that finds memories by meaning, chats with your own entries, and turns a period into a mood summary plus an illustration. Delivered together with a full 25-document BA/SA set.",
+      "A privacy-first diary app that finds memories by meaning, chats with your own entries, and turns a period into a mood summary plus an illustration. Next.js frontend, Elysia API, Supabase with pgvector, Google Gemini.",
     tech: [
       "Next.js",
       "Elysia (Bun)",
@@ -87,10 +87,10 @@ export const projects = [
       "Google Gemini",
     ],
     highlights: [
-      "Requirements to tests: 15 functional + 8 quality requirements traced to 23 test cases with a 100% traceability matrix",
-      "Semantic search and RAG chat on pgvector (HNSW) with per-user Row Level Security in the database",
+      "Semantic search and RAG chat on pgvector (HNSW) with per-user Row Level Security enforced in the database",
+      "15 API endpoints behind httpOnly cookie sessions, with a per-route rate limit that answers 429",
       "PDPA consent gate before any external AI call, revocable from settings, plus export and delete-all",
-      "Thai-first UI with English localisation, a 30-second project clip, and a 22-slide deck in both languages",
+      "Thai and English UI from a single dictionary, 22 automated tests and a GitHub Actions pipeline",
     ],
     links: {
       repo: "https://github.com/Zynin43839/rag-diary",
