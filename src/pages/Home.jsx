@@ -55,6 +55,12 @@ const Hero = () => (
               >
                 <Linkedin size={16} /> LinkedIn
               </FancyLink>
+              <FancyLink
+                className="btn"
+                href="mailto:oranut43939@gmail.com?subject=Request%20for%20CV"
+              >
+                <Mail size={16} /> Request my CV
+              </FancyLink>
             </div>
 
             <div className="flex items-center gap-2 text-white/70">
