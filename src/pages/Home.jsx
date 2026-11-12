@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { FileDown, Github, Linkedin, Mail, MapPin, Star } from "lucide-react";
+import { Github, Linkedin, Mail, MapPin, Star } from "lucide-react";
 import Header from "../components/Header";
 import Section from "../components/Section";
 import Starfield from "../components/Starfield";
@@ -54,14 +54,6 @@ const Hero = () => (
                 rel="noreferrer"
               >
                 <Linkedin size={16} /> LinkedIn
-              </FancyLink>
-              <FancyLink
-                className="btn"
-                href="/resume/Oranut-Suphatamat-Resume.pdf"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FileDown size={16} /> Resume
               </FancyLink>
             </div>
 
